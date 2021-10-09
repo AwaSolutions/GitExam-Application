@@ -32,6 +32,10 @@ public class DashBoardFormController {
         primarystage.show();
     }
 
-    public void openSaveItemrOnAction(ActionEvent actionEvent) {
+    public void openSaveItemrOnAction(ActionEvent actionEvent) throws IOException {
+        Scene scene= new Scene(FXMLLoader.load(getClass().getResource("../view/ItemForm.fxml")));
+        Stage primarystage= new Stage();
+        primarystage.setScene(scene);
+        primarystage.show();
     }
 }
